@@ -43,6 +43,7 @@ h6 {
 	color: #5f0099 !important;
 }
 .navbar .navbar-brand {
+    width: 10%;
 }
 .navbar .nav-item {
 	margin: 0 5px;
@@ -132,6 +133,7 @@ h6 {
 	margin:40px 0px;
 }
 .banner-text ul {
+    display: none;
 	list-style: none;
 }
 .banner-text ul li {
@@ -508,6 +510,12 @@ input {
 #contact_form {
 	margin-bottom:20px;
 }
+.navbar .navbar-brand {
+    width: 10%;
+}
+.banner-overlay .img-fluid {
+    max-width: 100% !important;
+}
 }
 @media all and (max-width:768px) {
 .nav-scroll .navbar-brand img, .navbar-brand img {
@@ -600,4 +608,20 @@ h3 {
 .footer-copy p {
 	font-size: 10px;
 }
+.navbar .navbar-brand {
+    width: 15%;
+}
+.banner-overlay .img-fluid {
+    max-width: 50% !important;
+}
+}
+.navbar .navbar-brand img {
+    width: 100%;
+}
+.banner-overlay .img-fluid {
+    max-width: 100%;
+    padding-top: 30px;
+}
+.feature-mobile {
+    padding-top: 35px;
 }
