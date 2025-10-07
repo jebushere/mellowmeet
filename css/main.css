@@ -2381,3 +2381,59 @@ html.no-csstransitions .home-content__main {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* -------------------------------------------------------------------
+ * Survey bar (fixed vertical link on the right side)
+ * Keeps with existing styles: uses accent color #67D1AB, uppercase letter-spacing.
+ * Hidden on narrow screens.
+ * ------------------------------------------------------------------- */
+.survey-bar {
+  position: fixed;
+  right: 0; /* flush to right */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+  z-index: 9999;
+  padding: 0;
+  transition: transform 0.25s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* move the whole bar slightly left on hover/focus */
+.survey-bar:hover,
+.survey-bar:focus {
+  transform: translateY(-50%) translateX(-6px);
+}
+
+/* clickable label that's visually a bar and reads top-to-bottom */
+.survey-bar__label {
+  display: block;
+  writing-mode: vertical-rl; /* top-to-bottom */
+  text-orientation: upright; /* keep letters upright */
+  background: #67D1AB;
+  color: #000000;
+  font-family: "metropolis-medium", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 2px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  /* keep the visual left border but no gap on the right */
+  border-left: .2rem solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* slightly darker on hover */
+.survey-bar__label:hover,
+.survey-bar__label:focus {
+  background: #55b995;
+}
+
+@media only screen and (max-width:800px) {
+  /* keep visible on small screens by default; remove hiding to ensure visibility */
+}
