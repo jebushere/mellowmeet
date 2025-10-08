@@ -2448,6 +2448,6 @@ html.no-csstransitions .home-content__main {
 
   /* nudge the entire bar slightly left so label isn't clipped by device safe area */
   .survey-bar {
-    transform: translateY(-50%) translateX(-8px);
+    transform: translateY(-50%) translateX(-16px);
   }
 }
