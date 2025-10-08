@@ -2415,12 +2415,12 @@ html.no-csstransitions .home-content__main {
   background: #67D1AB;
   color: #000000;
   font-family: "metropolis-medium", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: .3rem;
   font-weight: bold;
-  font-size: 1.2rem;
-  letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 6px 2px;
+  padding: 10px 12px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   /* keep the visual left border but no gap on the right */
