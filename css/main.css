@@ -2437,3 +2437,17 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:800px) {
   /* keep visible on small screens by default; remove hiding to ensure visibility */
 }
+
+/* Mobile adjustments: ensure the vertical label doesn't get clipped on small screens */
+@media only screen and (max-width:480px) {
+  .survey-bar__label {
+    font-size: 1.1rem;
+    padding: 8px 8px;
+    box-shadow: none;
+  }
+
+  /* nudge the entire bar slightly left so label isn't clipped by device safe area */
+  .survey-bar {
+    transform: translateY(-50%) translateX(-8px);
+  }
+}
