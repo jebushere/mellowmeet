@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  --mint: #62e6c0;
+  --mint-soft: #a3f6df;
+  --white: #f5f7f7;
+  --muted: #c1c9ca;
+  --line: rgba(98, 230, 192, 0.65);
+
+  --background: #02090d;
+  --text-color: #f4f7f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text-color);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--mint);
+  color: #04110f;
+}
+
+/* React Root */
+
+#root {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Mellow Background */
+
+.mellow-site {
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      ellipse at 48% 105%,
+      #063d43 0,
+      transparent 33%
+    ),
+    radial-gradient(
+      ellipse at 5% 80%,
+      #063c45 0,
+      transparent 25%
+    ),
+    linear-gradient(
+      115deg,
+      #02070c 0%,
+      #03151c 48%,
+      #010609 100%
+    );
+}
+
+/* Animated Network Canvas */
+
+#mellow-network-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  display: block;
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
